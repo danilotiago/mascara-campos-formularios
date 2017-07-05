@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Máscaras de campos</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+
+           <h1>Máscaras de campos</h1>
+           <span>Repositório oficial do plugin: <a href="https://github.com/igorescobar/jQuery-Mask-Plugin" target="_blank">Igor Escobar</a></span>
+           <br>
+           <br>
+           <br>
+
+            <form method="POST" action="#">
+
+               <div class="col-md-6">
+
+                  <div class="form-group">
+                   <label for="cpf">CPF</label>                                                               <!-- total de dígitos (contando os caracteres da mascara) menos 1 -->
+                   <input type="text" class="form-control cpf" id="cpf" placeholder="000.000.000-00" required pattern=".{14}" title="Ops! parece que seu CPF está faltando dígitos">
+                 </div>
+
+                  <div class="form-group">
+                   <label for="data">Data</label>
+                   <input type="text" class="form-control data" id="data" placeholder="00/00/0000">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="hora-simples">Hora simples</label>
+                   <input type="text" class="form-control hora-simples" id="hora-simples" placeholder="00:00">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="hora-completa">Hora completa</label>
+                   <input type="text" class="form-control hora-completa" id="hora-completa" placeholder="00:00:00">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="data-hora">Data hora</label>
+                   <input type="text" class="form-control data-hora" id="data-hora" placeholder="00/00/0000 00:00:00">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="cep">CEP</label>
+                   <input type="text" class="form-control cep" id="cep" placeholder="00000-000">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="telefone-simples">Telefone simples</label>
+                   <input type="text" class="form-control telefone-simples" id="telefone-simples" placeholder="0000-0000">
+                 </div>
+
+               </div>
+
+               <div class="col-md-6">
+
+                  <div class="form-group">
+                   <label for="telefone-completo">Telefone completo</label>
+                   <input type="text" class="form-control telefone-completo" id="telefone-completo" placeholder="(00) 0000-0000">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="celular-simples">Celular simples</label>
+                   <input type="text" class="form-control celular-simples" id="celular-simples" placeholder="0 0000-0000">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="celular-completo">Celular completo</label>
+                   <input type="text" class="form-control celular-completo" id="celular-completo" placeholder="(00) 0 0000-0000">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="rg">RG</label>
+                   <input type="text" class="form-control rg" id="rg" placeholder="00.000.000-0">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="cnpj">CNPJ</label>
+                   <input type="text" class="form-control cnpj" id="cnpj" placeholder="00.000.000/0000-00">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="dinheiro">Dinheiro</label>
+                   <input type="text" class="form-control dinheiro" id="dinheiro" placeholder="000.000.000,00">
+                 </div>
+
+                 <div class="form-group">
+                   <button type="submit" class="btn btn-default">Submit</button>
+                 </div>
+
+               </div>
+
+            </form>
+
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/gera-mascara.js"></script>
+    </body>
+</html>
