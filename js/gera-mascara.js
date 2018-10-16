@@ -19,7 +19,7 @@ $(document).ready(function(){
   $('.dinheiro').mask("#.##0,00", {reverse: true});
   $(".dinheiro").on('blur', function () {
      var valor = $(this).val();
-      if (valor != 0) {
+      if (valor >= 1) {
          valor = valor.trim();
          valor = valor.replace(/^0+/, '');
          $(this).val(valor);
