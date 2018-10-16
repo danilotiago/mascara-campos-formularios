@@ -17,7 +17,14 @@ $(document).ready(function(){
   $('.rg').mask('00.000.000-0');
   $('.cnpj').mask('00.000.000/0000-00');
   $('.dinheiro').mask("#.##0,00", {reverse: true});
-
+  $(".dinheiro").on('blur', function () {
+     var valor = $(this).val();
+      if (valor != 0) {
+         valor = valor.trim();
+         valor = valor.replace(/^0+/, '');
+         $(this).val(valor);
+     }
+  });
   // Outros formatos
   $('.mixed').mask('AAA 000-S0S');
   $('.ip_address').mask('0ZZ.0ZZ.0ZZ.0ZZ', {
